@@ -9,14 +9,14 @@ const projects = [
         name: "E-Commerce",
         description:
             "Visit my repository on github.",
-        image: "/Ecommerce.png",
+        image: "/projects/Ecommerce.png",
         github: "https://github.com/RamliFarijiZamhuri/Toko-electronic-cahaya-abadi",
         link: "https://cahayaabadielectronic.netlify.app/",
     },
     {
         name: "Anime List",
         description: "Visit my repository on github.",
-        image: "/AnimeList.png",
+        image: "/projects/AnimeList.png",
         github: "https://github.com/RamliFarijiZamhuri/cuyanimelist",
         link: "https://cuyanimelist-snowy.vercel.app/",
     },
@@ -24,7 +24,7 @@ const projects = [
         name: "Movie List",
         description:
             "Visit my repository on github.",
-        image: "/MovieList.png",
+        image: "/projects/MovieList.png",
         github: "https://github.com/RamliFarijiZamhuri/cuymovielist",
         link: "https://cuymovielist.vercel.app/",
     },
@@ -32,7 +32,7 @@ const projects = [
         name: "Registration Form",
         description:
             "Visit my repository on github.",
-        image: "/RegistrationForm.png",
+        image: "/projects/RegistrationForm.png",
         github: "https://github.com/RamliFarijiZamhuri/RegistrationForm",
         link: "https://registrationform-by-rams.vercel.app/",
     },
@@ -40,7 +40,7 @@ const projects = [
         name: "Password Generator",
         description:
             "Visit my repository on github.",
-        image: "/PasswordGenerator.png",
+        image: "/projects/PasswordGenerator.png",
         github: "https://github.com/RamliFarijiZamhuri/password-generator",
         link: "https://password-generator-psi-sandy.vercel.app/",
     },
@@ -48,7 +48,7 @@ const projects = [
         name: "Articale",
         description:
             "Visit my repository on github.",
-        image: "/Articale.png",
+        image: "/projects/Articale.png",
         github: "https://github.com/RamliFarijiZamhuri/artikel-cianjur",
         link: "https://articale.vercel.app/",
     },
@@ -56,7 +56,7 @@ const projects = [
         name: "Unpam Space",
         description:
             "Visit my repository on github.",
-        image: "/UnpamSpace.png",
+        image: "/projects/UnpamSpace.png",
         github: "https://github.com/RamliFarijiZamhuri/UNPAM-SPACE",
         link: "https://unpam-space.vercel.app//",
     },

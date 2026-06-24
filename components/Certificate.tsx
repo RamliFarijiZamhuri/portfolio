@@ -6,7 +6,7 @@ const Certificate = [
     {
         name: "Dicoding",
         description: "Descripton not found.",
-        image: "/Dicoding.png",
+        image: "/certificates/Dicoding.png",
     },
     {
         name: "Freecodecamp",
