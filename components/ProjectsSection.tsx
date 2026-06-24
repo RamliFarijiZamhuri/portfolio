@@ -52,6 +52,22 @@ const projects = [
         github: "https://github.com/RamliFarijiZamhuri/artikel-cianjur",
         link: "https://articale.vercel.app/",
     },
+    {
+        name: "Unpam Space",
+        description:
+            "Visit my repository on github.",
+        image: "/UnpamSpace.png",
+        github: "https://github.com/RamliFarijiZamhuri/UNPAM-SPACE",
+        link: "https://unpam-space.vercel.app//",
+    },
+    {
+        name: "Trash Bank App",
+        description:
+            "Visit my repository on github.",
+        image: "/projects/Trash-Bank-App.png",
+        github: "https://github.com/RamliFarijiZamhuri/Aplikasi-Bank-Sampah-Digital",
+        link: "https://unpam-space.vercel.app//",
+    },
 ]
 
 const ProjectsSection = () => {

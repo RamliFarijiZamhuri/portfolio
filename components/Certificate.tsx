@@ -5,13 +5,43 @@ import SlideUp from "./SlideUp"
 const Certificate = [
     {
         name: "Dicoding",
-        description:"Descripton not found.",
+        description: "Descripton not found.",
         image: "/Dicoding.png",
     },
     {
         name: "Freecodecamp",
         description: "Descripton not found.",
-        image: "/Freecodecamp.png",
+        image: "/certificates/Freecodecamp.png",
+    },
+    {
+        name: "Growia",
+        description: "Descripton not found.",
+        image: "/certificates/dasar-dasar-pengujian-perangkat-lunak.png",
+    },
+    {
+        name: "Pamulang University",
+        description: "Descripton not found.",
+        image: "/certificates/KECERDASAN-BUATAN-(AI)-UNTUK-PEMAHAMAN-DAN-IMPLEMENTASI-YANG-LEBIH-BAIK.png",
+    },
+    {
+        name: "IBM",
+        description: "Descripton not found.",
+        image: "/certificates/SkillsBuild_IBM-Granite-Models-for-Software-Development.png",
+    },
+    {
+        name: "Pamulang University",
+        description: "Descripton not found.",
+        image: "/certificates/software-engineering.png",
+    },
+    {
+        name: "IBM",
+        description: "Descripton not found.",
+        image: "/certificates/SkillsBuild_Use-Generative-AI-for-Software-Development.png",
+    },
+    {
+        name: "Hackathon",
+        description: "Descripton not found.",
+        image: "/certificates/hackathon-HIMTIF.png",
     },
 ]
 
@@ -30,13 +60,13 @@ const CertificateSections = () => {
                             <SlideUp offset="-300px 0px -300px 0px">
                                 <div className="flex flex-col  animate-slideUpCubiBezier animation-delay-2 md:flex-row md:space-x-12">
                                     <div className=" md:w-1/2">
-                                            <Image
-                                                src={Certificate.image}
-                                                alt=""
-                                                width={1000}
-                                                height={1000}
-                                                className="rounded-xl shadow-xl hover:opacity-70"
-                                            />
+                                        <Image
+                                            src={Certificate.image}
+                                            alt=""
+                                            width={1000}
+                                            height={1000}
+                                            className="rounded-xl shadow-xl hover:opacity-70"
+                                        />
                                     </div>
                                     <div className="mt-8 md:w-1/2">
                                         <h1 className="text-4xl font-bold mb-6">{Certificate.name}</h1>
