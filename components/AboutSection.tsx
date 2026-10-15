@@ -1,82 +1,68 @@
 import React from "react"
-import Image from "next/image"
 
-const skills = [
-    { skill: "HTML" },
-    { skill: "CSS" },
-    { skill: "JavaScript" },
-    { skill: "TypeScript" },
-    { skill: "React" },
-    { skill: "Next.js" },
-    { skill: "Tailwind CSS" },
-    { skill: "Git" },
-    { skill: "GitHub" },
+const skillCategories = [
+    {
+        title: "Frontend & Core",
+        skills: ["JavaScript (ES6+)", "TypeScript", "React", "Next.js", "HTML5", "CSS3"],
+    },
+    {
+        title: "Styling & UI",
+        skills: ["Tailwind CSS", "Responsive Design"],
+    },
+    {
+        title: "Tools & Workflow",
+        skills: ["Git", "GitHub", "REST API", "Vercel / Netlify"],
+    },
 ]
 
 const AboutSection = () => {
     return (
         <section id="about">
-            <div className="my-12 pb-12 md:pt-16 md:pb-48">
+            <div className="my-12 pb-12 md:pt-16 md:pb-32">
                 <h1 className="text-center font-bold text-4xl">
                     About Me
                     <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>
                 </h1>
 
                 <div className="flex flex-col space-y-10 items-stretch justify-center align-top md:space-x-10 md:space-y-0 md:p-4 md:flex-row md:text-left">
-                    <div className="md:w-1/2 ">
+                    <div className="md:w-1/2">
                         <h1 className="text-center text-2xl font-bold mb-6 md:text-left">
                             Get to know me!
                         </h1>
                         <p>
-                            Hi, my name is Ramli Fariji Zamhuri and I am a{" "}
-                            <span className="font-bold">{"highly ambitious"}</span>,
-                            <span className="font-bold">{" self-motivated"}</span>, and
-                            <span className="font-bold">{" driven"}</span> Frontend Developer.
+                            Hi! I&#39;m <span className="font-bold">Ramli Fariji Zamhuri</span>, a Frontend Developer focused on building clean, responsive, and user-friendly web applications.
                         </p>
                         <br />
                         <p>
-                            I graduated of Computer Engineering from SMK MUTIARA QOLBU CIANJUR in 2023.
+                            I graduated with a background in Computer Engineering from SMK Mutiara Qolbu Cianjur (2023). I enjoy turning designs into functional code using modern technologies like React, Next.js, and Tailwind CSS.
                         </p>
                         <br />
                         <p>
-                            I have a wide range of hobbies and passions that keep me busy.
-                            From reading, playing sports, traveling,
-                            I am always seeking new experiences and love to keep myself
-                            engaged and learning new things.
-                        </p>
-                        <br />
-                        <p>
-                            I believe that you should{" "}
-                            <span className="font-bold text-teal-500">
-                                never stop growing
-                            </span>{" "}
-                            and that&#39;s what I strive to do, I have a passion for
-                            technology and a desire to always push the limits of what is
-                            possible. I am excited to see where my career takes me and am
-                            always open to new opportunities. 🙂
+                            I am continuously improving my skills, eager to learn best practices in frontend architecture, and currently seeking new <span className="font-bold text-teal-500">internship or full-time opportunities</span> to contribute to real-world projects.
                         </p>
                     </div>
-                    <div className="text-center md:w-1/2 md:text-left">
-                        <h1 className="text-2xl font-bold mb-6">My Skills</h1>
-                        <div className="flex flex-wrap flex-row justify-center z-10 md:justify-start">
-                            {skills.map((item, idx) => {
-                                return (
-                                    <p
-                                        key={idx}
-                                        className="bg-gray-200 px-3 py-2 mr-2 mt-2 text-gray-500 rounded font-semibold"
-                                    >
-                                        {item.skill}
-                                    </p>
-                                )
-                            })}
+
+                    <div className="md:w-1/2">
+                        <h1 className="text-center text-2xl font-bold mb-6 md:text-left">My Skills</h1>
+                        <div className="space-y-4">
+                            {skillCategories.map((cat, idx) => (
+                                <div key={idx} className="bg-white/50 dark:bg-stone-900/50 p-4 rounded-xl border border-gray-200 dark:border-stone-800">
+                                    <h2 className="text-sm font-semibold uppercase tracking-wider text-teal-600 dark:text-teal-400 mb-2.5">
+                                        {cat.title}
+                                    </h2>
+                                    <div className="flex flex-wrap gap-2">
+                                        {cat.skills.map((skill, sIdx) => (
+                                            <span
+                                                key={sIdx}
+                                                className="bg-gray-100 dark:bg-stone-800 text-gray-800 dark:text-stone-200 px-3 py-1 rounded-md font-medium text-xs border border-gray-200 dark:border-stone-700 shadow-sm"
+                                            >
+                                                {skill}
+                                            </span>
+                                        ))}
+                                    </div>
+                                </div>
+                            ))}
                         </div>
-                        <Image
-                            src="/hero.jpg"
-                            alt=""
-                            width={300}
-                            height={300}
-                            className="hidden md:block md:relative md:-bottom-1 md:left-24 md:z-0"
-                        />
                     </div>
                 </div>
             </div>

@@ -6,48 +6,55 @@ import { BsGithub, BsArrowUpRightSquare } from "react-icons/bs"
 
 const projects = [
     {
-        name: "E-Commerce",
+        name: "E-Commerce Cahaya Abadi",
         description:
-            "Visit my repository on github.",
+            "A modern online electronics store frontend with catalog browsing, shopping cart functionality, and responsive checkout layout.",
+        tech: ["React", "JavaScript", "Tailwind CSS", "Netlify"],
         image: "/projects/Ecommerce.png",
         github: "https://github.com/RamliFarijiZamhuri/Toko-electronic-cahaya-abadi",
         link: "https://cahayaabadielectronic.netlify.app/",
     },
     {
-        name: "Anime List",
-        description: "Visit my repository on github.",
+        name: "Anime List Explorer",
+        description:
+            "Anime discovery platform fetching real-time data from the Jikan REST API with search, pagination, and detailed media views.",
+        tech: ["Next.js", "React", "REST API", "Tailwind CSS"],
         image: "/projects/AnimeList.png",
         github: "https://github.com/RamliFarijiZamhuri/cuyanimelist",
         link: "https://cuyanimelist-snowy.vercel.app/",
     },
     {
-        name: "Movie List",
+        name: "Movie List App",
         description:
-            "Visit my repository on github.",
+            "Movie catalog web app integrating TMDB API to showcase trending movies, ratings, and detailed synopses.",
+        tech: ["React", "REST API", "CSS Modules", "Vercel"],
         image: "/projects/MovieList.png",
         github: "https://github.com/RamliFarijiZamhuri/cuymovielist",
         link: "https://cuymovielist.vercel.app/",
     },
     {
-        name: "Registration Form",
+        name: "Registration & Auth Form",
         description:
-            "Visit my repository on github.",
+            "Responsive form interface implementing client-side validation, error handling, and clean feedback states.",
+        tech: ["HTML5", "CSS3", "JavaScript"],
         image: "/projects/RegistrationForm.png",
         github: "https://github.com/RamliFarijiZamhuri/RegistrationForm",
         link: "https://registrationform-by-rams.vercel.app/",
     },
     {
-        name: "Password Generator",
+        name: "Password Generator Tool",
         description:
-            "Visit my repository on github.",
+            "Utility web app to generate secure passwords with custom criteria such as length, symbols, and one-click clipboard copying.",
+        tech: ["JavaScript", "HTML5", "Tailwind CSS"],
         image: "/projects/PasswordGenerator.png",
         github: "https://github.com/RamliFarijiZamhuri/password-generator",
         link: "https://password-generator-psi-sandy.vercel.app/",
     },
     {
-        name: "Articale",
+        name: "Artikel Cianjur Web Portal",
         description:
-            "Visit my repository on github.",
+            "Content-focused web layout designed for reading articles about local tourism and cultural highlights.",
+        tech: ["Next.js", "Tailwind CSS", "Vercel"],
         image: "/projects/Articale.png",
         github: "https://github.com/RamliFarijiZamhuri/artikel-cianjur",
         link: "https://articale.vercel.app/",
@@ -55,18 +62,20 @@ const projects = [
     {
         name: "Unpam Space",
         description:
-            "Visit my repository on github.",
+            "Community web portal project designed for student collaboration and sharing campus resources.",
+        tech: ["Next.js", "Tailwind CSS", "Vercel"],
         image: "/projects/UnpamSpace.png",
         github: "https://github.com/RamliFarijiZamhuri/UNPAM-SPACE",
-        link: "https://unpam-space.vercel.app//",
+        link: "https://unpam-space.vercel.app/",
     },
     {
-        name: "Trash Bank App",
+        name: "Trash Bank App (Bank Sampah Digital)",
         description:
-            "Visit my repository on github.",
+            "Digital waste management concept interface empowering users to track recyclable deposits and promote environmental sustainability.",
+        tech: ["React", "Next.js", "Tailwind CSS"],
         image: "/projects/Trash-Bank-App.png",
         github: "https://github.com/RamliFarijiZamhuri/Aplikasi-Bank-Sampah-Digital",
-        link: "https://unpam-space.vercel.app//",
+        link: "https://unpam-space.vercel.app/",
     },
 ]
 
@@ -95,10 +104,20 @@ const ProjectsSection = () => {
                                         </Link>
                                     </div>
                                     <div className="mt-8 md:w-1/2">
-                                        <h1 className="text-4xl font-bold mb-6">{project.name}</h1>
-                                        <p className="text-xl leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
-                                            {project.description}
+                                        <h1 className="text-4xl font-bold mb-4">{project.name}</h1>
+                                        <p className="text-lg leading-7 mb-4 text-neutral-600 dark:text-neutral-400">
+                                             {project.description}
                                         </p>
+                                        <div className="flex flex-wrap gap-2 mb-6">
+                                            {project.tech.map((t, tIdx) => (
+                                                <span
+                                                    key={tIdx}
+                                                    className="text-xs font-semibold px-2.5 py-1 bg-teal-50 dark:bg-stone-800 text-teal-700 dark:text-teal-400 border border-teal-200 dark:border-stone-700 rounded-md"
+                                                >
+                                                    {t}
+                                                </span>
+                                            ))}
+                                        </div>
                                         <div className="flex flex-row align-bottom space-x-4">
                                             <Link href={project.github} target="_blank">
                                                 <BsGithub

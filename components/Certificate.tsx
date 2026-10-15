@@ -4,43 +4,43 @@ import SlideUp from "./SlideUp"
 
 const Certificate = [
     {
-        name: "Dicoding",
-        description: "Descripton not found.",
+        name: "Dicoding Indonesia",
+        description: "Belajar Dasar Pemrograman Web & Pengenalan Logika Pemrograman.",
         image: "/certificates/Dicoding.png",
     },
     {
-        name: "Freecodecamp",
-        description: "Descripton not found.",
+        name: "freeCodeCamp",
+        description: "Responsive Web Design Certification & Frontend Development fundamentals.",
         image: "/certificates/Freecodecamp.png",
     },
     {
         name: "Growia",
-        description: "Descripton not found.",
+        description: "Dasar-Dasar Pengujian Perangkat Lunak (Software Quality Assurance).",
         image: "/certificates/dasar-dasar-pengujian-perangkat-lunak.png",
     },
     {
         name: "Pamulang University",
-        description: "Descripton not found.",
+        description: "Seminar & Workshop: Kecerdasan Buatan (AI) untuk Pemahaman dan Implementasi Modern.",
         image: "/certificates/KECERDASAN-BUATAN-(AI)-UNTUK-PEMAHAMAN-DAN-IMPLEMENTASI-YANG-LEBIH-BAIK.png",
     },
     {
-        name: "IBM",
-        description: "Descripton not found.",
+        name: "IBM SkillsBuild",
+        description: "IBM Granite Models for Software Development & Enterprise AI Integration.",
         image: "/certificates/SkillsBuild_IBM-Granite-Models-for-Software-Development.png",
     },
     {
         name: "Pamulang University",
-        description: "Descripton not found.",
+        description: "Software Engineering & Architecture Principles Training.",
         image: "/certificates/software-engineering.png",
     },
     {
-        name: "IBM",
-        description: "Descripton not found.",
+        name: "IBM SkillsBuild",
+        description: "Use Generative AI for Software Development & Productivity Enhancement.",
         image: "/certificates/SkillsBuild_Use-Generative-AI-for-Software-Development.png",
     },
     {
-        name: "Hackathon",
-        description: "Descripton not found.",
+        name: "HIMTIF Hackathon",
+        description: "Participant & Project Showcase in Annual Student Technology Hackathon.",
         image: "/certificates/hackathon-HIMTIF.png",
     },
 ]
@@ -48,7 +48,7 @@ const Certificate = [
 
 const CertificateSections = () => {
     return (
-        <section className="py-60">
+        <section id="certificates" className="my-12 pb-12 md:pt-16 md:pb-24">
             <h1 className="text-center font-bold text-4xl">
                 Certificate
                 <hr className="w-6 h-1 mx-auto my-4 bg-teal-500 border-0 rounded"></hr>

@@ -6,7 +6,7 @@ import Certificate from '@/components/Certificate'
 
 const Home = () => {
   return (
-    <main className="mx-auto maz-w-fill px-4 sm:px-6 md:max-w-5xl">
+    <main className="mx-auto w-full px-4 sm:px-6 md:max-w-5xl">
       <HeroSection />
       <AboutSection />
       <ProjectsSection />
