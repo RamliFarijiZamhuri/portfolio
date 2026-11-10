@@ -57,7 +57,6 @@ const Navbar = () => {
                     >
                         <h2 className="text-xl md:text-2xl font-bold tracking-tight text-neutral-900 dark:text-white transition-colors">
                             Ramli Fariji Zamhuri
-                            <span className="text-teal-500">.</span>
                         </h2>
                     </Link>
 
