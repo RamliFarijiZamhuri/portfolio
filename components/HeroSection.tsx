@@ -6,93 +6,89 @@ import { HiArrowDown } from "react-icons/hi"
 
 const HeroSection = () => {
     return (
-        <section id="home">
-            <div className="flex flex-col text-center items-center justify-center animate-fadeIn animation-delay-2 my-10 py-16">
-                <div>
-                    <Image
-                        src="/Myfoto.jpg"
-                        alt="Ramli Fariji Zamhuri"
-                        width={325}
-                        height={325}
-                        className="rounded-full shadow-2xl hover:scale-105 transition-transform duration-300"
-                        priority
-                    />
+        <section
+            id="home"
+            className="min-h-[100dvh] flex flex-col items-center justify-center pt-16 pb-6 md:pt-20 md:pb-10"
+        >
+            <div className="flex flex-col text-center items-center justify-center animate-fadeIn w-full max-w-2xl px-4 my-auto">
+                {/* Profile Photo - Lebih besar di HP & Laptop */}
+                <div className="relative mb-3 sm:mb-5">
+                    <div className="w-63 h-63 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-2xl ring-4 ring-teal-500/20 dark:ring-teal-400/20 hover:scale-105 transition-transform duration-300 mx-auto">
+                        <Image
+                            src="/Myfoto.jpg"
+                            alt="Ramli Fariji Zamhuri"
+                            width={300}
+                            height={300}
+                            className="object-cover w-full h-full"
+                            priority
+                        />
+                    </div>
                 </div>
-                <div className="mt-8 md:w-4/5 lg:w-3/5">
-                    <div className="inline-flex items-center gap-2 px-3.5 py-1.5 rounded-full bg-teal-50 dark:bg-stone-800/80 border border-teal-200 dark:border-stone-700 text-teal-700 dark:text-teal-400 text-sm font-medium mb-5 shadow-sm">
-                        <span className="relative flex h-2 w-2">
-                            <span className="animate-ping absolute inline-flex h-full w-full rounded-full bg-teal-400 opacity-75"></span>
-                            <span className="relative inline-flex rounded-full h-2 w-2 bg-teal-500"></span>
-                        </span>
-                        Informatics Engineering Student @ Universitas Pamulang
-                    </div>
 
-                    <h1 className="text-4xl md:text-5xl font-bold tracking-tight">
-                        Hi, I&#39;m{" "}
-                        <span className="text-teal-600 dark:text-teal-400">
-                            Ramli Fariji Zamhuri
-                        </span>
-                    </h1>
+                {/* Status Badge */}
+                <div className="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-teal-50 dark:bg-stone-800 border border-teal-200 dark:border-stone-700 text-teal-700 dark:text-teal-400 text-xs sm:text-sm font-medium mb-2.5 sm:mb-4 shadow-sm">
+                    <span className="w-2 h-2 rounded-full bg-teal-500 animate-pulse" />
+                    Informatics Student @ Universitas Pamulang
+                </div>
 
-                    <p className="text-lg md:text-xl mt-4 mb-6 text-neutral-600 dark:text-neutral-300 leading-relaxed max-w-2xl mx-auto">
-                        An Informatics Engineering undergraduate student at{" "}
-                        <span className="font-semibold text-teal-600 dark:text-teal-400">
-                            Universitas Pamulang
-                        </span>{" "}
-                        and an enthusiastic{" "}
-                        <span className="font-semibold text-teal-600 dark:text-teal-400">
-                            Frontend Developer
-                        </span>
-                        . Passionate about building modern, responsive, and user-friendly web applications that deliver real impact and value.
-                    </p>
+                {/* Headline - Tetap besar & tebal */}
+                <h1 className="text-3xl sm:text-4xl md:text-5xl font-extrabold tracking-tight text-neutral-900 dark:text-white mb-2 sm:mb-3">
+                    Hi, I&#39;m{" "}
+                    <span className="text-teal-600 dark:text-teal-400">
+                        Ramli Fariji Zamhuri
+                    </span>
+                </h1>
 
-                    <div className="flex flex-wrap items-center justify-center gap-2 mb-8 text-xs md:text-sm font-medium text-neutral-600 dark:text-neutral-300">
-                        <span className="px-3 py-1 bg-neutral-100 dark:bg-stone-800/60 rounded-full border border-neutral-200 dark:border-stone-700">
-                            🎓 Universitas Pamulang
-                        </span>
-                        <span className="px-3 py-1 bg-neutral-100 dark:bg-stone-800/60 rounded-full border border-neutral-200 dark:border-stone-700">
-                            💻 Frontend Web Developer
-                        </span>
-                        <span className="px-3 py-1 bg-neutral-100 dark:bg-stone-800/60 rounded-full border border-neutral-200 dark:border-stone-700">
-                            🏆 3rd Place HIMTIF Hackathon Winner
-                        </span>
-                    </div>
+                {/* Bio - Tetap jelas & nyaman dibaca */}
+                <p className="text-sm sm:text-base md:text-lg mb-5 sm:mb-6 text-neutral-600 dark:text-neutral-300 leading-relaxed max-w-lg mx-auto">
+                    An Informatics Engineering student at{" "}
+                    <span className="font-semibold text-neutral-900 dark:text-white">
+                        Universitas Pamulang
+                    </span>{" "}
+                    & passionate{" "}
+                    <span className="font-semibold text-neutral-900 dark:text-white">
+                        Frontend Developer
+                    </span>
+                    , focused on crafting responsive, clean, and intuitive web applications.
+                </p>
 
-                    <div className="flex flex-row items-center justify-center gap-4">
-                        <Link
-                            to="projects"
-                            className="text-neutral-100 font-semibold px-6 py-3 bg-teal-600 rounded-lg shadow hover:bg-teal-700 cursor-pointer transition-all"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}
-                            offset={-100}
-                            duration={500}
-                        >
-                            View Projects
-                        </Link>
-                        <a
-                            href="/CV-Ramli-Fariji-Zamhuri.pdf"
-                            target="_blank"
-                            rel="noopener noreferrer"
-                            className="text-neutral-800 dark:text-neutral-100 font-semibold px-6 py-3 bg-white dark:bg-stone-800 border border-neutral-300 dark:border-stone-700 rounded-lg shadow hover:bg-neutral-100 dark:hover:bg-stone-700 transition-all cursor-pointer"
-                        >
-                            View Resume
-                        </a>
-                    </div>
+                {/* Action Buttons */}
+                <div className="flex flex-row items-center justify-center gap-3 sm:gap-4 mb-4 sm:mb-6">
+                    <Link
+                        to="projects"
+                        className="text-white text-sm sm:text-base font-semibold px-5 sm:px-6 py-2.5 sm:py-3 bg-teal-600 rounded-xl shadow-md hover:bg-teal-700 cursor-pointer transition-all active:scale-95"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                    >
+                        View Projects
+                    </Link>
+                    <a
+                        href="asset/CV.pdf"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="text-neutral-800 dark:text-neutral-100 text-sm sm:text-base font-semibold px-5 sm:px-6 py-2.5 sm:py-3 bg-white dark:bg-stone-800 border border-neutral-300 dark:border-stone-700 rounded-xl shadow-md hover:bg-neutral-100 dark:hover:bg-stone-700 transition-all cursor-pointer active:scale-95"
+                    >
+                        View Resume
+                    </a>
+                </div>
 
-                    <div className="flex flex-row items-center text-center justify-center pt-20">
-                        <Link
-                            to="about"
-                            activeClass="active"
-                            spy={true}
-                            smooth={true}
-                            offset={-100}
-                            duration={500}
-                            className="cursor-pointer"
-                        >
-                            <HiArrowDown size={35} className="animate-bounce" />
-                        </Link>
-                    </div>
+                {/* Scroll Down Indicator */}
+                <div className="flex justify-center">
+                    <Link
+                        to="about"
+                        activeClass="active"
+                        spy={true}
+                        smooth={true}
+                        offset={-100}
+                        duration={500}
+                        aria-label="Scroll to About section"
+                        className="cursor-pointer p-1.5 rounded-full text-neutral-400 hover:text-teal-600 dark:hover:text-teal-400 hover:bg-neutral-100 dark:hover:bg-stone-800 transition-all"
+                    >
+                        <HiArrowDown size={26} className="animate-bounce" />
+                    </Link>
                 </div>
             </div>
         </section>
