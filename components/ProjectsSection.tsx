@@ -77,6 +77,15 @@ const projects = [
         github: "https://github.com/RamliFarijiZamhuri/Aplikasi-Bank-Sampah-Digital",
         link: "",
     },
+    {
+        name: "Ruang Sewa",
+        description:
+            "A modern sports facility booking platform that allows users to find, check real-time schedule availability, and seamlessly reserve courts (futsal, badminton, mini soccer, and tennis) without manual queues.",
+        tech: ["Next.js", "React", "Tailwind CSS", "TypeScript"],
+        image: "/projects/RuangSewa.png",
+        github: "https://github.com/RamliFarijiZamhuri/RuangSewa",
+        link: "",
+    },
 ]
 
 const ProjectsSection = () => {
