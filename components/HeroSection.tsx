@@ -13,7 +13,7 @@ const HeroSection = () => {
             <div className="flex flex-col text-center items-center justify-center animate-fadeIn w-full max-w-2xl px-4 my-auto">
                 {/* Profile Photo - Lebih besar di HP & Laptop */}
                 <div className="relative mb-3 sm:mb-5">
-                    <div className="w-55 h-55 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-2xl ring-4 ring-teal-500/20 dark:ring-teal-400/20 hover:scale-105 transition-transform duration-300 mx-auto">
+                    <div className="w-44 h-44 sm:w-52 sm:h-52 md:w-64 md:h-64 lg:w-72 lg:h-72 rounded-full overflow-hidden shadow-2xl ring-4 ring-teal-500/20 dark:ring-teal-400/20 hover:scale-105 transition-transform duration-300 mx-auto">
                         <Image
                             src="/Myfoto.jpg"
                             alt="Ramli Fariji Zamhuri"
