@@ -86,6 +86,15 @@ const projects = [
         github: "https://github.com/RamliFarijiZamhuri/RuangSewa",
         link: "",
     },
+    {
+        name: "Web Profil SMKS PGRI Rangkasbitung",
+        description:
+            "An informative and interactive school profile web portal for SMKS PGRI Rangkasbitung, showcasing institutional achievements, academic majors, campus facilities, and online student admissions (SPMB).",
+        tech: ["HTML5", "CSS3", "JavaScript", "Tailwind CSS"],
+        image: "/projects/web-smks-pgri-rangkasbitung.png",
+        github: "https://github.com/wannafaik/web-profile-smk-pgr-rangkasbitung",
+        link: "https://wannafaik.github.io/web-profile-smk-pgr-rangkasbitung/index.html",
+    },
 ]
 
 const ProjectsSection = () => {
