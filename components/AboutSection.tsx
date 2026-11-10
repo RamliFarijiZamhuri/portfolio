@@ -34,7 +34,7 @@ const AboutSection = () => {
                         </p>
                         <br />
                         <p>
-                            I graduated with a background in Computer Engineering from SMK Mutiara Qolbu Cianjur (2023). I enjoy turning designs into functional code using modern technologies like React, Next.js, and Tailwind CSS.
+                            I graduated with a background in Computer Engineering from SMK Mutiara Qolbu Cianjur (2023) and am currently an Informatics Engineering student at <span className="font-semibold text-teal-600 dark:text-teal-400">Universitas Pamulang</span>. I enjoy turning designs into functional code using modern technologies like React, Next.js, and Tailwind CSS.
                         </p>
                         <br />
                         <p>

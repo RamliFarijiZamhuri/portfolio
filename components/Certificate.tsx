@@ -5,42 +5,32 @@ import SlideUp from "./SlideUp"
 const Certificate = [
     {
         name: "Dicoding Indonesia",
-        description: "Belajar Dasar Pemrograman Web & Pengenalan Logika Pemrograman.",
+        description:
+            "Belajar Dasar Pemrograman Web — Pemahaman fundamental pembuatan website menggunakan HTML5, styling CSS3, serta penerapan tata letak responsif.",
         image: "/certificates/Dicoding.png",
     },
     {
+        name: "Dicoding Indonesia",
+        description:
+            "Belajar Dasar Pemrograman JavaScript — Pemahaman dasar sintaks JavaScript, tipe data, pengkondisian, perulangan, fungsi, dan logika pemrograman modern.",
+        image: "/certificates/dasar-pemrograman-js.png",
+    },
+    {
+        name: "Dicoding Indonesia",
+        description:
+            "Belajar Dasar Cloud dan Gen AI di AWS — Pengenalan fundamental komputasi awan (cloud computing) serta eksplorasi konsep Generative AI pada ekosistem Amazon Web Services.",
+        image: "/certificates/dicoding-dasar cloud dan gen ai di aws.png",
+    },
+    {
         name: "freeCodeCamp",
-        description: "Responsive Web Design Certification & Frontend Development fundamentals.",
+        description:
+            "Responsive Web Design Developer Certification — 300 jam pembelajaran mendalam tentang HTML5, CSS3 modern, Flexbox, CSS Grid, dan perancangan web responsif.",
         image: "/certificates/Freecodecamp.png",
     },
     {
-        name: "Growia",
-        description: "Dasar-Dasar Pengujian Perangkat Lunak (Software Quality Assurance).",
-        image: "/certificates/dasar-dasar-pengujian-perangkat-lunak.png",
-    },
-    {
-        name: "Pamulang University",
-        description: "Seminar & Workshop: Kecerdasan Buatan (AI) untuk Pemahaman dan Implementasi Modern.",
-        image: "/certificates/KECERDASAN-BUATAN-(AI)-UNTUK-PEMAHAMAN-DAN-IMPLEMENTASI-YANG-LEBIH-BAIK.png",
-    },
-    {
-        name: "IBM SkillsBuild",
-        description: "IBM Granite Models for Software Development & Enterprise AI Integration.",
-        image: "/certificates/SkillsBuild_IBM-Granite-Models-for-Software-Development.png",
-    },
-    {
-        name: "Pamulang University",
-        description: "Software Engineering & Architecture Principles Training.",
-        image: "/certificates/software-engineering.png",
-    },
-    {
-        name: "IBM SkillsBuild",
-        description: "Use Generative AI for Software Development & Productivity Enhancement.",
-        image: "/certificates/SkillsBuild_Use-Generative-AI-for-Software-Development.png",
-    },
-    {
         name: "HIMTIF Hackathon",
-        description: "Participant & Project Showcase in Annual Student Technology Hackathon.",
+        description:
+            "Penghargaan Juara 3 atas ide kreatif dan solusi inovatif pada kompetisi Hackathon dengan tema \"Innovating Beyond The Code\" yang diselenggarakan oleh HIMTIF.",
         image: "/certificates/hackathon-HIMTIF.png",
     },
 ]
@@ -62,7 +52,7 @@ const CertificateSections = () => {
                                     <div className=" md:w-1/2">
                                         <Image
                                             src={Certificate.image}
-                                            alt=""
+                                            alt={Certificate.name}
                                             width={1000}
                                             height={1000}
                                             className="rounded-xl shadow-xl hover:opacity-70"
